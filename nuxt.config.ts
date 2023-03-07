@@ -2,5 +2,12 @@
 export default defineNuxtConfig({
   typescript: {
     shim: false
-  }
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {}
+    }
+  },
+  srcDir: './src/',
 })

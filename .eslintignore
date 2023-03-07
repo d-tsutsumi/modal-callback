@@ -1,0 +1,5 @@
+*.md
+.nuxt/
+.output/
+.history
+/src/types/api/
