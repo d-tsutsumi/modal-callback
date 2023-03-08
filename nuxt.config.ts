@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   typescript: {
     shim: false
   },
+  css: ['~/assets/tailwind.css', '~/assets/app.css'],
   postcss: {
     plugins: {
       tailwindcss: {},

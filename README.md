@@ -1,7 +1,7 @@
 
 
 ## motivation
-モーダルのコールバック地獄をRxjsでシンプルにすることが目標
+モーダルのコールバック地獄をシンプルにすることが目標
 ## Setup
 
 Make sure to install the dependencies:
