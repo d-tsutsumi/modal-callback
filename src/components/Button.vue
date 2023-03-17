@@ -3,22 +3,24 @@
 type Props = {
   label: string,
   type?: 'button' | 'submit' | 'reset',
-  click?: () => void
+  click: (arg: any) => void,
+  addClass?: string
 }
 
-const { label, type,  click } = withDefaults(defineProps<Props>(), {
+const { label, type,  click, addClass } = withDefaults(defineProps<Props>(), {
   type: 'button'
 })
 </script>
 <template>
   <button
     :type="type"
-    :class="(`
+    class="(`
       h-[40px] text-amber-600 border-solid border 
       border-amber-600 bg-white  leading-[40px] w-[150px] 
       rounded-[6px] outline-none  general-btn box-border py-0 px-2 
       hover:text-white hover:bg-amber-600 hover:border-solid hover:border hover:border-amber-600
       text-center shadow-none`)"
+    :class="addClass"
     @click="click"
     :label="label"
   >
